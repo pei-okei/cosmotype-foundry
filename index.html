@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body style="background:url(assets/A2721_spiral.png);">
+<body style="background:url(img/A2721_spiral.png);">
+    <!-- nav bar -->
+    <!-- TODO: fix how the bar doesn't stay there... -->
     <nav>
         <ul class="nav">
             <li>
@@ -21,14 +23,19 @@
             </li>
         </ul>
     </nav>
+
+
+    <!-- font bubbles -->
+    <!-- TODO: figure out better way to place multiple layers, other than absolute positions -->
     <div> 
         <div class="font-bubble" 
-        style="rotate:-14deg; z-index:1; top: 6vw; left:2vw;
-            background-color: #89c4f2;">
-            font #1
+        style="rotate:-14deg; z-index:1; top: 1vw; left:5vw;
+            background-color: #89c4f2; font-size:17vw; padding: 0.25em 0.5em; text-align:center;">
+            <div class="lava-lamp" style="display:inline">OOh</div>
+            <div class="lava-lamp" style="display:inline">Ah</div>
         </div>
         <a href="" class="download" 
-        style="z-index:2; top: 31vw; left:45vw; rotate:-24deg;">
+        style="z-index:2; top: 28vw; left:42vw; rotate:-24deg;">
             download!
         </a>
     </div>

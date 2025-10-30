@@ -11,9 +11,27 @@
 	scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: "Lava Lamp";
+    src: url(fonts/BasteleurLavaLampVF.ttf);
+}
+
 ul.nav {
-    display: flex;
+    display: flex; 
+    flex-direction: row;
+
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 20px;
+    height:100%;
+
+    align-self: flex-start;
     justify-content: space-between;
+    flex-direction: row;
+
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+
     padding: 5px;
     list-style-type: none;
     border-bottom: 1px solid black;
@@ -45,6 +63,16 @@ a.nav:active{
     padding:0.2em 0.4em; 
     margin-top: 3vw;
     position:absolute;
+}
+
+.lava-lamp {
+    font-family:"Lava Lamp";
+    font-variation-settings:"LALA" 0;
+    transition:0.5s;
+}
+
+.lava-lamp:hover {
+    font-variation-settings:"LALA" 100;
 }
 
 a.download {
