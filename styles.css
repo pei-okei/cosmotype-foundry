@@ -19,7 +19,7 @@
 
 
 /* nav bar */ 
-/* TODO: why won't sticky position work for flex box? Below is a temporary fix.*/
+/* TODO: making flexbox sticky to the top... this container is only a temporary solution and loses functionality */
 .container-for-nav {
     position: relative;
 }
@@ -100,7 +100,7 @@ a.nav:active{
     font-family:"Lava Lamp";
     font-variation-settings:"LALA" 0;
 
-    transition: font-variation-settings 0.5s;
+    transition: font-variation-settings 3s;
     padding:0px;
     margin:0px;
 }
@@ -140,7 +140,6 @@ a.download {
 
 
 /* adjustments for small screens */
-/* TODO: gonna need some help adjusting navs for mobile*/
 @media only screen and (max-width: 500px){
     ul.nav {
         flex-wrap: wrap;
