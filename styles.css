@@ -17,20 +17,22 @@
 }
 
 ul.nav {
+    font-size:24px;
     display: flex; 
     flex-direction: row;
+    gap: 25px;
 
-    position: -webkit-sticky; /* for Safari */
+    /* TODO: why won't sticky position work for flex box? */
     position: sticky;
     top: 20px;
     height:100%;
 
-    align-self: flex-start;
+    /* align-self: flex-start; */
     justify-content: space-between;
     flex-direction: row;
 
-    writing-mode: sideways-lr;
-    text-orientation: mixed;
+    /* writing-mode: sideways-lr;
+    text-orientation: mixed; */
 
     padding: 5px;
     list-style-type: none;
@@ -40,10 +42,10 @@ ul.nav {
 
 a.nav {
     text-decoration: none;
-    font-size:2.4vw;
     font-weight:bold;
     color:black;
     font-family:futura;
+    flex-basis: 100px;
 }
 
 a.nav:hover {
@@ -57,9 +59,8 @@ a.nav:active{
 
 .font-bubble {
     font-size:20vw;
-    display:inline-block; 
-    border:0.5vw solid black; 
-    border-radius: 100%; 
+    display:inline-block;
+    border-radius: 50%; 
     padding:0.2em 0.4em; 
     margin-top: 3vw;
     position:absolute;
@@ -68,7 +69,11 @@ a.nav:active{
 .lava-lamp {
     font-family:"Lava Lamp";
     font-variation-settings:"LALA" 0;
+
+    /* TODO: transition looks super weird when changing screen size */
     transition:0.5s;
+    padding:0px;
+    margin:0px;
 }
 
 .lava-lamp:hover {
@@ -77,10 +82,42 @@ a.nav:active{
 
 a.download {
     font-size:3.5vw;
-    background-color: pink;
-    border: 0.5vw solid purple;
+    font-family: Tahoma;
+    font-weight: 900;
+
+    border: 0.5vw solid;
     border-radius: 2em;
     padding:0.5em 1.0em; 
     position:absolute;
     text-decoration: none;
+}
+
+@keyframes variable-font-loop-animation{
+    0% {
+        font-variation-settings: "LALA" 0;
+        background-position:0% 50%;
+    }
+    50% {
+        font-variation-settings: "LALA" 100;
+        background-position:100% 50%;
+    }
+    100% {
+        font-variation-settings: "LALA" 0;
+        background-position:0% 50%;
+    }
+}
+
+/* TODO: gonna need some help adjusting navs for mobile*/
+@media only screen and (max-width: 500px){
+    ul.nav {
+        flex-wrap: wrap;
+    }
+
+    .lava-lamp {
+        transition: none;
+        animation-name: variable-font-loop-animation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
 }
