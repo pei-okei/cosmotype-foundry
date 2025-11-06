@@ -52,12 +52,12 @@
     position: sticky;
     top: 0px;
 
-    font-size:24px;
+    font-size:32px;
 
     /* writing-mode: sideways-lr;
     text-orientation: mixed; */
 
-    padding: 15px;
+    /* padding: 15px; */
     /* border-bottom: 1px solid black; */
     /* background-color: #ffefee; */
 }
@@ -65,22 +65,33 @@
     display: flex;
 }
 
+.logo-cls {
+    fill: #67ff76;
+}
+.logo-cls:hover {
+    fill: #f9c2f1;
+}
+.logo-cls:active {
+    fill: #4671e7;
+}
+
+
 a.nav {
     text-decoration: none;
     font-weight:bold;
     color:whitesmoke;
-    font-family:futura;
-    flex-basis: 100px;
-    border:none;
+    font-family:"astigmatism";
+    font-variation-settings: "SQUN" 100;
+    gap: 4px;
 }
 
 a.nav:hover {
-    filter: blur(5px);
+    filter: blur(3px);
 }
 
 a.nav:active{
     filter:none;
-    color:blue;
+    color:rgb(51, 58, 255);
 }
 
 
