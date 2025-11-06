@@ -36,9 +36,21 @@
                     </svg>
                 </a>
             </div>
+
             <div class="nav-links">
                 <a class="nav" href="./about/" style="flex-grow:1;flex-shrink:1;">about</a>
-                <a class="nav" href="./" style="flex-grow:1;flex-shrink:1;">fonts</a>
+                <div class="dropdown" style="flex-grow:1;flex-shrink:1;">
+                    <a href="./" class="nav">fonts</a>
+                    <!-- TODO: update this to jump to sections of the fonts -->
+                    <div class="dropdown-content">
+                        <a href="#font-1">astigmatism</a>
+                        <a href="#font-2">lava lamp</a>
+                        <a href="#font-3">pixel poor things</a>
+                        <a href="#font-4">medieval bestiary</a>
+                        <a href="#font-5">t.n.r. remixed</a>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
@@ -49,7 +61,7 @@
     <div class="font-display-grid" style="z-index:0;">
 
         <!-- font child #1 -->
-        <div class="font-display-child">
+        <div class="font-display-child" id="#font-1">
 
             <svg id="bubble-1-bg" data-name="bubble-1-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 635.19"
                 style="z-index:1; position:relative; width:80vw; top:6%; left:4%; rotate:4deg;">
@@ -94,7 +106,7 @@
 
 
         <!-- font child #2 -->
-        <div class="font-display-child">
+        <div class="font-display-child" id="font-2">
 
             <svg id="bubble-2-bg" data-name="bubble-2-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1749.62 833.79"
                 style="z-index:1; position:relative; top:0%; left:0%; width:95vw;">
@@ -147,7 +159,7 @@
 
 
         <!-- font child #3 -->
-        <div class="font-display-child">
+        <div class="font-display-child" id="font-3">
             <svg id="bubble-3-bg" data-name="bubble-3-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1481.23 811.07"
                 style="z-index:1; position:relative; top:4.6%; left:11%; width:80vw; rotate: 4deg;">
                 <defs>
@@ -198,7 +210,7 @@
 
 
         <!-- font child #4 -->
-        <div class="font-display-child">
+        <div class="font-display-child" id="font-4">
             <svg id="bubble-4-bg" data-name="bubble-4-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1575.33 589.23"
                 style="z-index:1; position:absolute; top:14%; left:2%; width:80vw; rotate: 2deg;">
                 <defs>
@@ -251,7 +263,7 @@
 
 
     <!-- font child #5 -->
-        <div class="font-display-child">
+        <div class="font-display-child" id="font-5">
 
             <svg id="bubble-5-bg" data-name="bubble-5-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1728.7 758.43"
                 style="z-index:1; position:absolute; top:0%; left:12%; width:80vw; rotate: -8deg;">

@@ -64,6 +64,7 @@ body {
     font-size:4vw;
     gap: 15px;
 }
+
 .logo-box{
     flex-grow: 1; 
     flex-shrink: 1; 
@@ -91,15 +92,44 @@ a.nav {
     font-family:"astigmatism";
     font-variation-settings: "SQUN" 100;
 }
-
 a.nav:hover {
     filter: drop-shadow(rgb(186, 182, 255) 0 0 0.20vw);
 }
-
 a.nav:active{
     filter: drop-shadow(rgb(255, 35, 248) 0 0 0.20vw);
     color:rgb(96, 102, 251);
 }
+
+
+/* The dropdown container */
+.dropdown {
+    overflow: hidden;
+    text-align:center;
+}
+
+.dropdown a {
+    font-family:"astigmatism";
+    font-variation-settings: "SQUN" 100;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 78%;
+    z-index: 9;
+}
+.dropdown-content a {
+    color: whitesmoke;
+    font-size: 3vw;
+    padding: 0.5vw 0.2vw;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content{
+    display: inline-block;
+    color:blue;
+}
+
 
 
 
