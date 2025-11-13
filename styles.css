@@ -233,6 +233,9 @@ a.nav:active{
     font-variation-settings:"VARI" 100;
 }
 
+
+
+/* type specimen page */
 .astigmatism-in-window {
     font-family:"astigmatism";
     font-size: 10vw;
@@ -249,7 +252,18 @@ a.nav:active{
     font-size: 4vw;
     font-family: "astigmatism";
     text-align:center;
+    text-transform:lowercase;
 }
+
+.spaceship-button {
+    position: absolute; 
+    background-color: rgb(63, 155, 230); 
+    z-index: 6; 
+    text-align: center; 
+    justify-items: center;
+    border-radius: 50%; 
+}
+
 
 
 /* links */ 
