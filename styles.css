@@ -11,6 +11,11 @@
 	scroll-behavior: smooth;
 }
 
+p {
+    color: white;
+    font-size: 24px;
+}
+
 @font-face {
     font-family: "astigmatism";
     src: url(fonts/astigmatismVF.ttf);
@@ -226,6 +231,24 @@ a.nav:active{
 }
 .tnr-remixed:hover {
     font-variation-settings:"VARI" 100;
+}
+
+.astigmatism-in-window {
+    font-family:"astigmatism";
+    font-size: 10vw;
+    rotate:4deg;
+    font-variation-settings:"SQUN" 0;
+    color:rgb(186, 182, 255);
+    margin: auto;
+    text-align: center;
+}
+
+.astigmatism-scrawl {
+    color:white; 
+    margin:auto; 
+    font-size: 4vw;
+    font-family: "astigmatism";
+    text-align:center;
 }
 
 
