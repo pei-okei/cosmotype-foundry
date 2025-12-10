@@ -236,6 +236,18 @@ a.nav:active{
 
 
 /* type specimen page */
+#font-specimen-container {
+    height: 100vh;
+    width: 100vw;
+    /* border: solid red 2px; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
+#font-specimen-container > div {
+    scroll-snap-align: top;
+    scroll-snap-stop: always;
+}
 .astigmatism-in-window {
     font-family:"astigmatism";
     font-size: 10vw;
@@ -248,20 +260,63 @@ a.nav:active{
 
 .astigmatism-scrawl {
     color:white; 
-    margin:auto; 
     font-size: 4vw;
     font-family: "astigmatism";
     text-align:center;
     text-transform:lowercase;
+    transition: 0.5s;
 }
 
 .spaceship-button {
+    --button-outline-color: rgb(165, 15, 135);
+
     position: absolute; 
     background-color: rgb(63, 155, 230); 
     z-index: 6; 
     text-align: center; 
     justify-items: center;
+    border: 0.2em solid var(--button-outline-color);
     border-radius: 50%; 
+    box-shadow: 0px 0.5vw var(--button-outline-color);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.spaceship-button:hover {
+    transform: translate(0vw, -0.25vw);
+    box-shadow: 0px 0.75vw var(--button-outline-color);
+}
+
+.spaceship-button:active {
+    transform: translate(0vw, 0.25vw);
+    box-shadow: 0px 0.25vw var(--button-outline-color);
+}
+
+.spaceship-slider {
+    -webkit-appearance: none;
+    position:absolute;
+    border-radius: 1vw; 
+    height: 1vw;
+    background:rgb(140, 103, 196);
+    outline: none;
+}
+
+.spaceship-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #ca6405;
+    cursor: pointer;
+}
+
+.spaceship-slider::-moz-range-thumb {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #ca6405;
+    cursor: pointer;
 }
 
 
