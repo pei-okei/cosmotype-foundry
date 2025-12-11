@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="gratings" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.97 126.76">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect width="268.97" height="8.25" rx="3.25" ry="3.25"/>
+      <rect y="23.82" width="268.97" height="8.25" rx="3.25" ry="3.25"/>
+      <rect y="47.64" width="268.97" height="8.25" rx="3.25" ry="3.25"/>
+      <rect y="71.46" width="268.97" height="8.25" rx="3.25" ry="3.25"/>
+      <rect y="94.69" width="268.97" height="8.25" rx="3.25" ry="3.25"/>
+      <rect y="118.51" width="268.97" height="8.25" rx="3.25" ry="3.25"/>
+    </g>
+  </g>
+</svg>
