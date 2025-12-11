@@ -351,12 +351,12 @@ a.nav:active{
     position:absolute;
     overflow: hidden;
     font-family: futura;
-    font-size:2.0vw;
     padding-top:1vw;
 }
 
 .news-headline span {
     color:#8cff00;
+    font-size:2vw;
     position:absolute;
     display: inline-block;
     white-space: nowrap;

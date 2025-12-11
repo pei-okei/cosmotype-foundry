@@ -82,6 +82,7 @@
                 A B C D E F G H 
             </div>
 
+            <!-- I got help from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll  -->
             <div style="width:50vw; height: 39.5vw; position: absolute; top: 5.4vw; left: 3%; z-index: 6; 
                 text-align: left; justify-items: center;
                 background-color: rgb(160, 240, 221); border-radius: 3.2vw;
@@ -124,6 +125,7 @@
             <button type="button" class="spaceship-button" style="width: 5vw; height: 5vw; top: 2vw; left: calc(3% * 3 + 50vw + 5vw);background-color: #44a62b; --button-outline-color:#24861b;" onclick="changePreviewColor('#24861b')"></button>
             <button type="button" class="spaceship-button" style="width: 5vw; height: 5vw; top: 2vw; left: calc(3% * 4 + 50vw + 5vw * 2);background-color: #5849c5; --button-outline-color:#4130c5;" onclick="changePreviewColor('#4130c5')"></button>
 
+            <!-- I got help from W3schools in this implementation: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_rangeslider_round  -->
             <p style="color:#4a8206;font-family:futura;font-size:2vw;position:absolute;top: calc(3% + 4vw + (16vw - 5vw - 3% * 2) / 2);left: calc(3% * 2 + 50vw);">vari</p>
             <input class='spaceship-slider' type="range" value="82" min="0" max="100" oninput="changeISMVariableAxis(this.value);" 
                 style="width: calc(5vw * 3 + 3% * 2); top: calc(3% + 8vw + (16vw - 5vw - 3% * 2) / 2); left: calc(3% * 2 + 50vw);">
@@ -132,7 +134,24 @@
             <input class='spaceship-slider' type="range" value="6" min="2" max="10" oninput="changeFontSize(this.value);" 
                 style="width: calc(5vw * 3 + 3% * 2); top: calc(3% + 15vw + (16vw - 5vw - 3% * 2) / 2); left: calc(3% * 2 + 50vw);">
 
-
+            <svg id="pink_crosshair" data-name="pink_crosshair" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.66 200.66"
+                style="position: absolute; width: 8vw; top: 10vw; left: 84vw; z-index: 6;">
+                <defs>
+                    <style>
+                    .crosshair-cls {
+                        fill: #f471ee;
+                    }
+                    </style>
+                </defs>
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <g>
+                    <rect class="crosshair-cls" y="94.97" width="58.3" height="10.71" rx="5.36" ry="5.36"/>
+                    <rect class="crosshair-cls" x="142.37" y="94.97" width="58.29" height="10.71" rx="5.36" ry="5.36"/>
+                    <rect class="crosshair-cls" x="94.98" width="10.71" height="58.29" rx="5.35" ry="5.35"/>
+                    <rect class="crosshair-cls" x="94.98" y="142.36" width="10.71" height="58.3" rx="5.35" ry="5.35"/>
+                    </g>
+                </g>
+            </svg>
             <div style="position: absolute; width: 16vw; height: 24vw; top: 2vw; left: calc(3% * 3 + 50vw + 5vw * 3 + 3% * 2); 
                     border-radius: 2vw; background-color: #da7807;">
                     <img src="../img/A2721_spiral_pixelated_cropped.png" alt="silly little galaxy pic" 
@@ -159,7 +178,8 @@
                 </g>
             </svg>
 
-            <div class="news-box" style="background-color:#2eaf82;left:56vw;top:24.4vw;"> 
+            <!-- I got help from: https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break  -->
+            <div class="news-box" style="background-color: #2eaf82; left:56vw; top:24.4vw;"> 
                 <!--TODO: ADD "loading intergalactic news..."-->
                 <p class="news-headline">
                     <span>duckpig voted as next galactic mascot</span>
