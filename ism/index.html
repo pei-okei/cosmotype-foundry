@@ -136,13 +136,6 @@
 
             <svg id="pink_crosshair" data-name="pink_crosshair" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.66 200.66"
                 style="position: absolute; width: 8vw; top: 10vw; left: 84vw; z-index: 6;">
-                <defs>
-                    <style>
-                    .crosshair-cls {
-                        fill: #f471ee;
-                    }
-                    </style>
-                </defs>
                 <g id="Layer_1-2" data-name="Layer 1">
                     <g>
                     <rect class="crosshair-cls" y="94.97" width="58.3" height="10.71" rx="5.36" ry="5.36"/>
@@ -152,6 +145,8 @@
                     </g>
                 </g>
             </svg>
+            <p id="slewing-text" style="color:#f471ee; font-size: 1.2vw; font-family: futura; position: absolute; top: 23vw; left: 82vw; z-index: 6;">slewing to target...</p>
+
             <div style="position: absolute; width: 16vw; height: 24vw; top: 2vw; left: calc(3% * 3 + 50vw + 5vw * 3 + 3% * 2); 
                     border-radius: 2vw; background-color: #da7807;">
                     <img src="../img/A2721_spiral_pixelated_cropped.png" alt="silly little galaxy pic" 
@@ -298,5 +293,17 @@
     }
 
     window.onload = randomSentence();
+
+    let count = 1;
+    setInterval(() => {
+        if (count >= 3) {
+            count = 1;
+        } else {
+            count += 1;
+        }
+        let text = document.querySelector("#slewing-text");
+        text.innerHTML = `slewing${".".repeat(count)}`;
+    }, 250);
+
 </script>
 </html>
