@@ -37,7 +37,7 @@
                 <div class="dropdown" style="flex-grow:1;flex-shrink:1;">
                     <a href="./" class="nav">fonts</a>
                     <div class="dropdown-content">
-                        <a href="./">astigmatism</a>
+                        <a href="./">ism</a>
                         <a href="../index.html#font-2">lava lamp</a>
                         <a href="../index.html#font-2">pixel poor things</a>
                         <a href="../index.html#font-2">medieval bestiary</a>
@@ -77,11 +77,16 @@
                 </g>
             </svg>
 
+            <div class="medieval-bestiary"
+                style="font-size:1.75vw;color:#fcdd75; position:absolute; top: 2.4vw; left: 3.4vw; z-index: 6;">
+                A B C D E F G H 
+            </div>
+
             <div style="width:50vw; height: 39.5vw; position: absolute; top: 5.4vw; left: 3%; z-index: 6; 
                 text-align: left; justify-items: center;
                 background-color: rgb(160, 240, 221); border-radius: 3.2vw;
                 overflow:hidden; overflow-wrap: normal; padding:1.4vw;">
-                <div id="astigmatism-preview" class="astigmatism-scrawl" style="padding: 1vw 2vw 1vw 2vw; font-size:6vw; width:50vw;z-index: 6;" contenteditable="true">
+                <div id="ism-preview" class="ism-scrawl" style="padding: 1vw 2vw 1vw 2vw; font-size:6vw; width:50vw;z-index: 6;" contenteditable="true">
                     milk and cookies
                 </div>
             </div>
@@ -111,7 +116,7 @@
             <a href="../about/">
                 <div class="spaceship-button" style="width:5.6vw; height:5.6vw; left: 47.5vw; top: 47.2vw; ; 
                     background-color:#e157f0; --button-outline-color:#c738d7;">
-                    <div class="astigmatism" style="position: absolute; top: 0.2vw; left: 1.4vw; font-size: 4.6vw; color: #8afb61;">i!</div>
+                    <div class="ism" style="position: absolute; top: 0.2vw; left: 1.4vw; font-size: 4.6vw; color: #8afb61;">i!</div>
                 </div>
             </a>
 
@@ -120,7 +125,7 @@
             <button type="button" class="spaceship-button" style="width: 5vw; height: 5vw; top: 2vw; left: calc(3% * 4 + 50vw + 5vw * 2);background-color: #5849c5; --button-outline-color:#4130c5;" onclick="changePreviewColor('#4130c5')"></button>
 
             <p style="color:#4a8206;font-family:futura;font-size:2vw;position:absolute;top: calc(3% + 4vw + (16vw - 5vw - 3% * 2) / 2);left: calc(3% * 2 + 50vw);">vari</p>
-            <input class='spaceship-slider' type="range" value="0" min="0" max="100" oninput="changeAstigmatismVariableAxis(this.value);" 
+            <input class='spaceship-slider' type="range" value="82" min="0" max="100" oninput="changeISMVariableAxis(this.value);" 
                 style="width: calc(5vw * 3 + 3% * 2); top: calc(3% + 8vw + (16vw - 5vw - 3% * 2) / 2); left: calc(3% * 2 + 50vw);">
 
             <p style="color:#4a8206;font-family:futura;font-size:2vw;position:absolute;top: calc(3% + 11vw + (16vw - 5vw - 3% * 2) / 2);left: calc(3% * 2 + 50vw);">size</p>
@@ -211,11 +216,11 @@
         <!-- <img src="../img/iss-window.png" alt="International Space Station Window" style="top: 0; z-index:3; height: 100vh; object-fit: cover;"> -->
 
         <!-- <div style="z-index: 2; position: relative; top: 60vh;">
-            <div class="astigmatism-in-window">  
+            <div class="ism-in-window">  
                 welcome 2 cosmotype
             </div>
 
-            <pre class="astigmatism-scrawl">
+            <pre class="ism-scrawl">
             The dead speak! The galaxy has
             heard a mysterious broadcast,
             a threat of REVENGE in the
@@ -245,30 +250,29 @@
 </body>
 <script>
     function changeFontSize(newSize) {
-        let text = document.querySelector("#astigmatism-preview");
+        let text = document.querySelector("#ism-preview");
         text.style.fontSize = newSize+"vw";
     }
 
-    function changeAstigmatismVariableAxis(newVal) {
-        let text = document.querySelector("#astigmatism-preview");
+    function changeISMVariableAxis(newVal) {
+        let text = document.querySelector("#ism-preview");
         text.style.fontVariationSettings = `"SQUN" ${newVal}`;
     }
 
     function changePreviewColor(hexcode) {
-        let text = document.querySelector("#astigmatism-preview");
+        let text = document.querySelector("#ism-preview");
         text.style.color = hexcode;
     }
 
     let sentences = [
         "Crazy girl sh*t. Gonna go spring breakers.<br>--Charli XCX",
-        "Hello! Goodbye!",
-        "There were drugs in the medicine cabinet.",
+        "Tuwmoiw has enguwfed the Gawactic Wepubwic. The taxation of twade woutes to outwying staw systems is in dispute.",
         "We present the large-scale correlation function measured from a spectroscopic sample of 46,748 luminous red galaxies from the Sloan Digital Sky Survey.",
         "As I have aged, I have come to realize, that if I were a farm animal, there are no longer any choice cuts about me. Every bit would be ground up for hot dogs.",
     ]
 
     function randomSentence() {
-        let text = document.querySelector("#astigmatism-preview");
+        let text = document.querySelector("#ism-preview");
         let index = Math.floor(Math.random()*sentences.length);
         text.innerHTML = sentences[index];
     }

@@ -24,8 +24,8 @@ p {
 
 
 @font-face {
-    font-family: "astigmatism";
-    src: url(fonts/astigmatismVF.ttf);
+    font-family: "Interstellar Medium";
+    src: url(fonts/InterstellarMediumVF.ttf);
 }
 @font-face {
     font-family: "Lava Lamp";
@@ -113,7 +113,7 @@ body {
 a.nav {
     text-decoration: none;
     color:whitesmoke;
-    font-family:"astigmatism";
+    font-family:"Interstellar Medium";
     font-variation-settings: "SQUN" 100;
 }
 a.nav:hover {
@@ -132,8 +132,8 @@ a.nav:active{
 }
 
 .dropdown a {
-    font-family:"astigmatism";
-    font-variation-settings: "SQUN" 100;
+    font-family:"Interstellar Medium";
+    font-variation-settings: "STAR" 100;
 }
 
 .dropdown-content {
@@ -186,19 +186,19 @@ a.nav:active{
 
 
 /* font display text */
-.astigmatism {
-    font-family:"astigmatism";
-    font-variation-settings: "SQUN" 100;
+.ism {
+    font-family:"Interstellar Medium";
+    font-variation-settings: "STAR" 100;
 }
-.astigmatism-display {
-    font-family:"astigmatism";
+.ism-display {
+    font-family:"Interstellar Medium";
     font-variation-settings: "SQUN" 0;
 
     transition: font-variation-settings 3s;
     padding:0px;
     margin:0px;
 }
-.astigmatism-display:hover {
+.ism-display:hover {
     font-variation-settings:"SQUN" 100;
 }
 
@@ -275,21 +275,21 @@ a.nav:active{
     scroll-snap-align: top;
     scroll-snap-stop: always;
 }
-.astigmatism-in-window {
-    font-family:"astigmatism";
+.ism-in-window {
+    font-family:"Interstellar Medium";
     font-size: 10vw;
     rotate:4deg;
-    font-variation-settings:"SQUN" 0;
+    font-variation-settings:"STAR" 0;
     color:rgb(186, 182, 255);
     margin: auto;
     text-align: center;
 }
 
-.astigmatism-scrawl {
+.ism-scrawl {
     color:#4130c5; 
-    font-family: "astigmatism";
+    font-family: "Interstellar Medium";
     transition: 0.5s;
-    font-variation-settings: "SQUN" 82;
+    font-variation-settings: "STAR" 82;
 }
 
 .spaceship-button {
@@ -398,7 +398,7 @@ a.download:hover {
 
 
 /* screen size adjustments */
-@keyframes astigmatism-loop-animation{
+@keyframes ism-loop-animation{
     0% {
         font-variation-settings: "SQUN" 0;
         background-position:0% 50%;
@@ -466,9 +466,9 @@ a.download:hover {
         gap: 5px;
     }
 
-    .astigmatism {
+    .ism {
         transition: none;
-        animation-name: astigmatism-loop-animation;
+        animation-name: ism-loop-animation;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
