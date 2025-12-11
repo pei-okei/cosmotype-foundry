@@ -114,7 +114,7 @@ a.nav {
     text-decoration: none;
     color:whitesmoke;
     font-family:"Interstellar Medium";
-    font-variation-settings: "SQUN" 100;
+    font-variation-settings: "STAR" 100;
 }
 a.nav:hover {
     filter: drop-shadow(rgb(186, 182, 255) 0 0 0.20vw);
@@ -192,14 +192,14 @@ a.nav:active{
 }
 .ism-display {
     font-family:"Interstellar Medium";
-    font-variation-settings: "SQUN" 0;
+    font-variation-settings: "STAR" 0;
 
     transition: font-variation-settings 3s;
     padding:0px;
     margin:0px;
 }
 .ism-display:hover {
-    font-variation-settings:"SQUN" 100;
+    font-variation-settings:"STAR" 100;
 }
 
 .lava-lamp {
@@ -400,15 +400,15 @@ a.download:hover {
 /* screen size adjustments */
 @keyframes ism-loop-animation{
     0% {
-        font-variation-settings: "SQUN" 0;
+        font-variation-settings: "STAR" 0;
         background-position:0% 50%;
     }
     50% {
-        font-variation-settings: "SQUN" 100;
+        font-variation-settings: "STAR" 100;
         background-position:100% 50%;
     }
     100% {
-        font-variation-settings: "SQUN" 0;
+        font-variation-settings: "STAR" 0;
         background-position:0% 50%;
     }
 }
