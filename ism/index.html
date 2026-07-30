@@ -145,7 +145,7 @@
                     </g>
                 </g>
             </svg>
-            <p id="slewing-text" style="color:#f471ee; font-size: 1.2vw; font-family: futura; position: absolute; top: 23vw; left: 82vw; z-index: 6;">slewing to target...</p>
+            <p id="slewing-text" style="color:#f471ee; font-size: 1.2vw; font-family: futura; position: absolute; top: 23vw; left: 82vw; z-index: 6;">slewing...</p>
 
             <div style="position: absolute; width: 16vw; height: 24vw; top: 2vw; left: calc(3% * 3 + 50vw + 5vw * 3 + 3% * 2); 
                     border-radius: 2vw; background-color: #da7807;">
@@ -207,7 +207,7 @@
 
             <img src="../img/weird-obj.png" style="position:absolute;width:16vw;left:79vw;top:36vw;border-radius:2vw;border:0.5vw solid #a8e260">
             <img src="../img/qubit-heatmap.png" style="position:absolute;width:18vw;left:56vw;top:31vw;">
-            <p style="position:absolute;left:80vw;top:47.5vw;width:8vw;font-size:1.2vw;font-family:futura;color:#a8e260">weird obj detected...</p>
+            <p id="weird-obj-text" style="position:absolute;left:80vw;top:47.5vw;width:8vw;font-size:1.2vw;font-family:futura;color:#a8e260">weird obj detected...</p>
         </div>
     
 
@@ -219,6 +219,8 @@
             <div style="height: calc(100vh - 55vw); width:25vw; background-color:rgb(233, 123, 27);">
             <div style="height: calc(100vh - 55vw); width:25vw; position: absolute; left:25vw; background-color:#8b84e9;"></div>
         </div>
+        <p style="font-size:2vw; font-family: futura; color:#fbd0f9; position:absolute;top: calc(100vh - 3vw); left: 1vw;">website by Pei-Jun</p>
+        <p style="font-size:2vw; font-family: futura; color:#fbd0f9; position:absolute;top: calc(100vh - 3vw); left: calc(100vw - 20vw); text-align: right;">Type + Code 2025</p>
         <!-- <div style="height: 50vw; width:100vw;background-color:#8ace00;">  
             <div style="height:50vw; width:50vw;background-color:rgb(233, 123, 27);">
         </div> -->
@@ -282,8 +284,12 @@
     let sentences = [
         "Crazy girl sh*t. Gonna go spring breakers.<br>--Charli XCX",
         "Tuwmoiw has enguwfed the Gawactic Wepubwic. The taxation of twade woutes to outwying staw systems is in dispute.",
-        "We present the large-scale correlation function measured from a spectroscopic sample of 46,748 luminous red galaxies from the Sloan Digital Sky Survey.",
+        "We present de grootschalige correlatiefunctie, gemeten aan de hand van een spectroscopische steekproef van 46.748 lichtsterke rode sterrenstelsels uit de Sloan Digital Sky Survey.",
         "As I have aged, I have come to realize, that if I were a farm animal, there are no longer any choice cuts about me. Every bit would be ground up for hot dogs.",
+        "So I (M35) have been gambling since I was 19. One night my boss invited me and some employees to his house to hang out. It was really fun, there was drinks, music and pool. Me and my boss started talking about our hobbies and I told him how dedicated i am with gambling. Like if im not by the slots, im on my phone playing a slot machine game, to increase my luck for when I go to the real machines. My boss was saying how bad it is to gamble and that its a terrible addiction. He is wrong! This is a lifestyle, not an addiction!",
+        "Pack my box with five dozen liquor jugs.",
+        "Cosmoleg ffisegol yw'r gangen o seryddiaeth sy'n astudio adeiledd a dynameg ein bydysawd ar raddfa uchel.",
+        "De astrofysica is specifiek het deel van de astronomie dat de processen die zich afspelen in sterren probeert te verklaren met natuurkundige wetten en meer in het algemeen de processen die in het heelal waarneembaar zijn probeert te verklaren.",
     ]
 
     function randomSentence() {
@@ -301,8 +307,8 @@
         } else {
             count += 1;
         }
-        let text = document.querySelector("#slewing-text");
-        text.innerHTML = `slewing${".".repeat(count)}`;
+        document.querySelector("#slewing-text").innerHTML = `slewing${".".repeat(count)}`;
+        document.querySelector("#weird-obj-text").innerHTML = `weird obj detected${".".repeat(count)}`;
     }, 250);
 
 </script>

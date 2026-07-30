@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.66 200.66">
+  <defs>
+    <style>
+      .crosshair-cls {
+        fill: #f471ee;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="crosshair-cls" y="94.97" width="58.3" height="10.71" rx="5.36" ry="5.36"/>
+      <rect class="crosshair-cls" x="142.37" y="94.97" width="58.29" height="10.71" rx="5.36" ry="5.36"/>
+      <rect class="crosshair-cls" x="94.98" width="10.71" height="58.29" rx="5.35" ry="5.35"/>
+      <rect class="crosshair-cls" x="94.98" y="142.36" width="10.71" height="58.3" rx="5.35" ry="5.35"/>
+    </g>
+  </g>
+</svg>
